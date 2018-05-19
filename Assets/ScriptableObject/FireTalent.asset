@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29777437286e4097a1cd64feab88c79a, type: 3}
+  m_Name: FireTalent
+  m_EditorClassIdentifier: 
+  Talent: 0
+  NormalAttackSpell: {fileID: 11400000, guid: dd0a021d05dd2a341b6ab53046024720, type: 2}
+  ShieldSpell: {fileID: 11400000, guid: 30d5ddc02a242a74c82d75ab8f61afcb, type: 2}
