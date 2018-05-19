@@ -264,6 +264,21 @@ GameObject:
   m_PrefabParentObject: {fileID: 1402643398466746, guid: e74f5c8a63dd9354d9aefcaf01dd55f3,
     type: 2}
   m_PrefabInternal: {fileID: 2082682231}
+--- !u!114 &347537649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 347537643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57ddbbc034d446bd9068cb5238910976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerPos: {fileID: 0}
+  Damage: 0
+  Description: 
+  Talent: 0
 --- !u!1 &373711923
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,6 +704,7 @@ GameObject:
   - component: {fileID: 708808028}
   - component: {fileID: 708808031}
   - component: {fileID: 708808030}
+  - component: {fileID: 708808032}
   - component: {fileID: 708808029}
   m_Layer: 5
   m_Name: SpellIcon
@@ -717,22 +733,101 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0}
---- !u!114 &708808029
-MonoBehaviour:
+--- !u!82 &708808029
+AudioSource:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 708808027}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 793d2ff639ab4707968feb212df3e96e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpellButtonAxisName: Fire1
-  DarkMask: {fileID: 1508076927}
-  CoolDownTextDisplay: {fileID: 284739637}
-  spell: {fileID: 11400000, guid: dd0a021d05dd2a341b6ab53046024720, type: 2}
-  playerPos: {fileID: 347537643}
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &708808030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -766,6 +861,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 708808027}
+--- !u!114 &708808032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 708808027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 793d2ff639ab4707968feb212df3e96e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpellButtonAxisName: Fire1
+  DarkMask: {fileID: 1508076927}
+  CoolDownTextDisplay: {fileID: 284739637}
+  spell: {fileID: 11400000, guid: dd0a021d05dd2a341b6ab53046024720, type: 2}
+  playerPos: {fileID: 347537643}
 --- !u!1001 &721193222
 Prefab:
   m_ObjectHideFlags: 0
