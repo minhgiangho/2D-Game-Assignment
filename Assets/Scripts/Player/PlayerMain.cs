@@ -7,7 +7,7 @@ namespace Player
     /// <summary>
     /// Player's main properties
     /// </summary>
-    [RequireComponent(typeof(PlayerTalent))]
+//    [RequireComponent(typeof(PlayerTalent))]
     public class PlayerMain : MonoBehaviour
     {
         private float initHealth = 5;

@@ -1,0 +1,28 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Healing Potion",
+    "type": "Consumable",
+    "description": "Restores health.",
+    "flavorText": "Is that blood?",
+    "capacity": 3,
+    "buyPrice": 10,
+    "sellPrice": 5,
+    "sprite": "Sprites/Items/hp",
+    "hp": 10,
+    "temporaryBuff": "None"
+  },
+  {
+    "id": 2,
+    "name": "Unbending Potion",
+    "type": "Consumable",
+    "description": "Reduces damage you suffered.",
+    "flavorText": "Tastes like rock",
+    "capacity": 1,
+    "buyPrice": 20,
+    "sellPrice": 10,
+    "sprite": "Sprites/Items/hp",
+    "hp": 0,
+    "temporaryBuff": "ReduceDamage"
+  }
+]
