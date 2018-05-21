@@ -39,9 +39,9 @@ namespace InventorySystem
 
         private void Update()
         {
-            throw new System.NotImplementedException();
         }
 
+        // TODO: load data from boot scene
         /// <summary>
         /// Parse json file to get item list
         /// </summary>

@@ -35,12 +35,12 @@ namespace InventorySystem
             {
                 newText = string.Format("{0}\n\nHeal: {1}", text, Hp);
             }
-            else if (TemporaryBuff != 0)
+            else if (TemporaryBuff != TemporaryBuff.None)
             {
                 // this item can add buff to player
                 newText = string.Format("{0}\n\nBuff: {1}", text, TemporaryBuff.ToString());
             }
-            else if (Hp > 0 && TemporaryBuff != 0)
+            else if (Hp > 0 && TemporaryBuff != TemporaryBuff.None)
             {
                 newText = string.Format("{0}\n\nHeal: {1}\nBuff: {2}", text, Hp, TemporaryBuff.ToString());
             }
